@@ -1,21 +1,18 @@
 (function (global) {
 
-  var ngVer = '@2.0.0-rc.1',
+  var ngVer = '@4.0.2',
     map = {
       'app': 'app',
-
-      '@angular': 'https://unpkg.com/@angular', // sufficient if we didn't pin the version
-      'angular2-in-memory-web-api': 'https://unpkg.com/angular2-in-memory-web-api', // get latest
-      'rxjs': 'https://unpkg.com/rxjs@5.0.0-beta.6',
-      'ts': 'https://unpkg.com/plugin-typescript@4.0.10/lib/plugin.js',
-      'typescript': 'https://unpkg.com/typescript@1.8.10/lib/typescript.js',
-      'moment': 'https://unpkg.com/moment@2.13.0/moment.js',
-      'ng2-bootstrap': 'https://unpkg.com/ng2-bootstrap@1.0.17/ng2-bootstrap.js'
+      '@angular': 'https://npmcdn.com/@angular',
+      'angular-in-memory-web-api': 'https://npmcdn.com/angular-in-memory-web-api@0.3.1/bundles/in-memory-web-api.umd.js',
+      'rxjs': 'https://npmcdn.com/rxjs@5.3.0',
+      'ts': 'https://npmcdn.com/plugin-typescript@7.0.6/lib/plugin.js',
+      'typescript': 'https://npmcdn.com/typescript@2.2.2/lib/typescript.js',
     },
     packages = {
       'app': {main: 'main.ts', defaultExtension: 'ts'},
       'rxjs': {defaultExtension: 'js'},
-      'angular2-in-memory-web-api': {defaultExtension: 'js'},
+      'angular-in-memory-web-api': {defaultExtension: 'js'}
     },
     ngPackageNames = [
       'common',
@@ -30,11 +27,7 @@
     ];
 
   ngPackageNames.forEach(function (pkgName) {
-    map['@angular/' + pkgName] = 'https://unpkg.com/@angular/' + pkgName + ngVer;
-  });
-
-  ngPackageNames.forEach(function (pkgName) {
-    packages['@angular/' + pkgName] = {main: pkgName + '.umd.js', defaultExtension: 'js'};
+    map['@angular/' + pkgName] = 'https://npmcdn.com/@angular/' + pkgName + ngVer + '/bundles/' + pkgName + '.umd.js';
   });
 
   var config = {
@@ -42,9 +35,10 @@
     typescriptOptions: {
       emitDecoratorMetadata: true
     },
+
     map: map,
     packages: packages
-  };
+  }
 
   System.config(config);
 

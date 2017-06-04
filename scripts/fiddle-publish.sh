@@ -1,8 +1,23 @@
 #!/usr/bin/env bash
+# ---------------------------------------------------------------------------------------------------|
+#  Repo                    : https://github.com/bradyhouse/house_____________________________________|
+#  Specification           : N/A_____________________________________________________________________|
+#  Specification Path      : N/A_____________________________________________________________________|
+#  Author                  : brady house_____________________________________________________________|
+#  Create date             : 05/31/2015______________________________________________________________|
+#  Description             : UTILITY USED SUPPORT FIDDLE.SH PUBLISH FUNCTION.                        |
+# ---------------------------------------------------------------------------------------------------|
+#  Revision History::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+# ---------------------------------------------------------------------------------------------------|
+# Baseline Ver
+# 04/10/2016 - See CHANGELOG @ 201703100420
+# ---------------------------------------------------------------------------------------------------|
+source bin/_utils.sh;
+source bin/_env.sh;
 
-_publishPath='/Users/bradyhouse/github/bradyhouse.github.io';
-_sourcePath='/Users/bradyhouse/github/house/fiddles';
-_commitMessage='201609160420';
+_publishPath="${GITHUB_ROOT}/${GITHUB_PUBLISH_REPO}";
+_sourcePath="${GITHUB_ROOT}/house/fiddles";
+_commitMessage="${BUILD_NUM}";
 
 
 function push() {
@@ -11,16 +26,43 @@ function push() {
   git push;
 }
 
+function cprfdist() {
+
+    fiddleType=$1;
+
+    if [[ -d "${fiddleType}/dist" ]]
+    then
+      dir=$(pwd;);
+      cd ${fiddleType};
+      cp -rf dist "${_publishPath}/${fiddleType}";
+      cd ${dir};
+    fi
+}
+
 function cprf() {
     cp -rf $1 ${_publishPath};
-    if [[ -d "${_publishPath}/$1/libs" ]]
-    then
-        rm -rf "${_publishPath}/$1/libs";
-    fi
+
     if [[ -d "${_publishPath}/$1" ]]
     then
-        rm -rf "${_publishPath}/$1/*.md";
-        rm -rf "${_publishPath}/$1/*.adoc";
+        dir=$(pwd;);
+
+        cd "${_publishPath}/$1";
+
+        if [[ -d "template" ]]
+        then
+          rm -rf "template";
+        fi
+
+        if [[ -d "libs" ]]
+        then
+            rm -rf "libs";
+        fi
+
+        rm -rf *.md;
+        rm -rf *.adoc;
+        rm -rf *.markdown;
+
+        cd ${dir};
     fi
 }
 
@@ -34,6 +76,8 @@ function rmrf() {
 
 cd ${_publishPath};
 
+rmrf angular2-seeder;
+rmrf angular2-cli;
 rmrf angular2;
 rmrf three;
 rmrf extjs5;
@@ -51,6 +95,8 @@ rmrf .gitignore;
 
 cd ${_sourcePath};
 
+cprfdist angular2-seeder;
+cprfdist angular2-cli;
 cprf angular2;
 cprf three;
 cprf extjs5;

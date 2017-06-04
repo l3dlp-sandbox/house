@@ -14,11 +14,33 @@
 # 05/18/2015 - See CHANGELOG @ 201605180420
 # 10/01/2016 - See CHANGELOG @ 201610010420
 # 12/15/2016 - See CHANGELOG @ 201612120420
+# 03/10/2017 - See CHANGELOG @ 201703100420
+# 04/24/2017 - See CHANGELOG @ 201704170420
 # ---------------------------------------------------------------------------------------------------|
 
 voidEchoFiddleTypes() {
 
     case $1 in
+        'build')
+          echo -e "\t\"angular2-seeder\"\tAngular2 Seeder Fiddle"
+          ;;
+        'setup')
+           echo -e "\t\"android\"\tinstall android-sdk\thttps://developer.android.com";
+           echo -e "\t\"brew\"\t\tinstall homebrew\thttp://brew.sh/";
+           echo -e "\t\"gh\"\t\tinstall github terminal\thttps://www.npmjs.com/package/gh";
+           echo -e "\t\"js-beautify\"\tinstall js-beautify\thttps://www.npmjs.com/package/js-beautify";
+           echo -e "\t\"live-server\"\tinstall live-server\thttps://www.npmjs.com/package/live-server";
+           echo -e "\t\"nativescript\"\tinstall nativeScript\thttps://www.npmjs.com/package/nativescript";
+           echo -e "\t\"ng\"\t\tinstall angular2-cli\thttps://cli.angular.io/";
+           echo -e "\t\"node\"\t\tinstall node.js\t\thttps://nodejs.org/en/";
+           echo -e "\t\"nvm\"\t\tinstall nvm\t\thttps://github.com/creationix/nvm";
+           echo -e "\t\"typescript\"\tinstall typeScript\thttps://www.npmjs.com/package/typescript";
+           echo -e "\t\"yarn\"\t\tinstall yarn\t\thttps://yarnpkg.com/lang/en/";
+           echo -e "\t\"zsh\"\t\tinstall zsh\t\thttp://ohmyz.sh/";
+
+           echo -e "";
+           echo -e "\t\"all\"\t\tinstall everything";
+          ;;
         'combine')
             echo -e "\t\"angular2\"\tAngular2 Fiddle"
             echo -e "\t\"d3\"\t\tData Driven Document Fiddle"

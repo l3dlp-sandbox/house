@@ -30,7 +30,7 @@ Alternately, the _Daily Diary of my Programming Dreams_.
     * This fiddle is a response to fiddle-20150401-BufferedColumnFiltering. It illustrates how to enable column filter on a grid panel bound to a vanilla data store--i.e. Ext.data.Store.  It combines the structure from fiddle-20150331-ExtJS4ColumnFiltering with the json data file (781 records) from fiddle-20150330-BufferedDataGrid using a DataStore.  Additionally, its an example of using the "bufferedrender" plugin as per the forum post ~ http://www.sencha.com/forum/showthread.php?259314.
 * Added **fiddles/extjs/fiddle-20150402-CustomColumnHeaderMenu** ~ (Under Construction)
     * Fiddle exploring how to override the default menu exposed by the column collection of the Ext.grid.Panel.
-* Added **fiddles/three/fiddleParabola**
+* Added **fiddles/three/fiddle-0021-Parabola**
     * Fiddle used to rewrite the fiddles/three/template/app.js template using a global window.app variable.
 * Added **fiddles/extjs/fiddle-20150403-SpreadSheetSelection** ~ [Sencha Fiddle](https://fiddle.sencha.com/#fiddle/kqj)
     * Fiddle exploring how to leverage the spreadsheet selection model and clipboard plugin introduced in 5.1.
@@ -923,7 +923,7 @@ Alternately, the _Daily Diary of my Programming Dreams_.
     1.  Added [fiddles/angular2/fiddle-0035-ModalForm](fiddles/angular2/fiddle-0035-ModalForm)
     2.  Added [fiddles/angular2/fiddle-0036-SiblingComponents](fiddles/angular2/fiddle-0036-SiblingComponents)
     3.  Added [fiddles/angular2/fiddle-0037-ModalPopUp](fiddles/angular2/fiddle-0037-ModalPopUp)
-    4.  Added [fiddles/angular2/fiddle-0038-ComponentResolver](fiddles/angular2/fiddle-0038-ComponentResolver)
+    4.  Added [fiddles/angular2/fiddle-0003-ComponentResolver](fiddles/angular2/fiddle-0003-ComponentResolver)
     5.  Added dependency (submodule) to [Farata / angular2typescript](https://github.com/Farata/angular2typescript)
     6.  Added dependency (submodule) to [angular-cli](https://github.com/angular/angular-cli)
 
@@ -1275,7 +1275,6 @@ Alternately, the _Daily Diary of my Programming Dreams_.
         3.  Updated [scripts/bin/nativescript/_create.sh](scripts/bin/nativescript/_create.sh)
         
 * **Java**
-  1.  Started [fiddles/java/fiddle-0004-CSVToJsonEndpoint](fiddles/java/fiddle-0004-CSVToJsonEndpoint) ~  [Issue 81](https://github.com/bradyhouse/house/issues/81)
 
 * **NativeScript**
   1.  Added [fiddles/nativescript/fiddle-0008-FifteenPuzzle](fiddles/nativescript/fiddle-0008-FifteenPuzzle) ~ [Issue 83](https://github.com/bradyhouse/house/issues/83)
@@ -1510,3 +1509,103 @@ Alternately, the _Daily Diary of my Programming Dreams_.
     2.  Added [fiddles/rxjs/fiddle-0005-ScanOperator](fiddles/rxjs/fiddle-0005-ScanOperator) ~ [Issue 135](https://github.com/bradyhouse/house/issues/135)
     3.  Added [fiddles/rxjs/fiddle-0006-FlatMap](fiddles/rxjs/fiddle-0006-FlatMap) ~ [Issue 136](https://github.com/bradyhouse/house/issues/136)
     4.  Added [fiddles/rxjs/fiddle-0007-OnErrorHandler](fiddles/rxjs/fiddle-0007-OnErrorHandler) ~ [Issue 137](https://github.com/bradyhouse/house/issues/137)
+
+
+### 201701180420
+
+* **C**
+    1.  Added [fiddles/c/fiddle-0034-StructDictionary](fiddles/c/fiddle-0034-StructDictionary) ~ [Issue 138](https://github.com/bradyhouse/house/issues/138)
+    2.  Added [fiddles/c/fiddle-0035-BinarySearch](fiddles/c/fiddle-0035-BinarySearch) ~ [Issue 139](https://github.com/bradyhouse/house/issues/139)
+    3.  Added [fiddles/c/fiddle-0036-StringToInteger](fiddles/c/fiddle-0036-StringToInteger) ~ [Issue 140](https://github.com/bradyhouse/house/issues/140)
+    4.  Added [fiddles/c/fiddle-0037-PointerVariables](fiddles/c/fiddle-0037-PointerVariables) ~ [Issue 141](https://github.com/bradyhouse/house/issues/141)
+    5.  Added [fiddles/c/fiddle-0038-StructurePointers](fiddles/c/fiddle-0038-StructurePointers) ~ [Issue 142](https://github.com/bradyhouse/house/issues/142)
+    6.  Added [fiddles/c/fiddle-0039-PointersInStructures](fiddles/c/fiddle-0039-PointersInStructures) ~ [Issue 143](https://github.com/bradyhouse/house/issues/143)
+
+* **NativeScript**
+    1.  Finished [fiddles/nativescript/fiddle-0011-SqliteNg2](fiddles/nativescript/fiddle-0011-SqliteNg2) ~ [Issue 124](https://github.com/bradyhouse/house/issues/124)
+
+* **fiddle.sh**
+     1. NativeScript startup should remove hooks directory ~ [Issue 144](https://github.com/bradyhouse/house/issues/144)
+        * Reflected changes:
+          1.  Updated [scripts/bin/nativescript/_start.sh](scripts/bin/nativescript/_start.sh) 
+
+* **Jquery**
+    1.  Started [fiddles/jquery/fiddle-0042-EniPuzzle](fiddles/jquery/fiddle-0042-EniPuzzle) ~ [Issue 146](https://github.com/bradyhouse/house/issues/146)
+    2.  Added [fiddles/jquery/fiddle-0043-DragAndDropApi](fiddles/jquery/fiddle-0043-DragAndDropApi) ~ [Issue 147](https://github.com/bradyhouse/house/issues/147)
+
+
+### 201703100420
+
+* **C**
+    1.  Added [fiddles/c/fiddle-0040-LinkedLists](fiddles/c/fiddle-0040-LinkedLists) ~ [Issue 146](https://github.com/bradyhouse/house/issues/146)
+    2.  Added [fiddles/c/fiddle-0041-FunctionArgPointer](fiddles/c/fiddle-0041-FunctionArgPointer) ~ [Issue 148](https://github.com/bradyhouse/house/issues/148)
+    3.  Added [fiddles/c/fiddle-0042-FunctionReturnPointer](fiddles/c/fiddle-0042-FunctionReturnPointer) ~ [Issue 149](https://github.com/bradyhouse/house/issues/149)
+    4.  Added [fiddles/c/fiddle-0043-ArrElementPointer](fiddles/c/fiddle-0043-ArrElementPointer) ~ [Issue 150](https://github.com/bradyhouse/house/issues/150)
+    5.  Added [fiddles/c/fiddle-0044-CharStringPointer](fiddles/c/fiddle-0044-CharStringPointer) ~ [Issue 151](https://github.com/bradyhouse/house/issues/151)   
+    
+* **fiddle.sh**
+    1. add "setup" function
+      1.  Added js-beautify support
+        * Reflected changes:
+          1.  Updated [scripts/bin/_types.sh](scripts/bin/_types.sh)
+          2.  Addded [scripts/bin/setup/mac/_js-beautify.sh](scripts/bin/setup/mac/_js-beautify.sh)
+          3.  Updated [scripts/bin/setup/_setup.sh](scripts/bin/setup/_setup.sh)
+      2.  Added gh support
+        * Reflected changes:
+          1.  Updated [scripts/bin/_types.sh](scripts/bin/_types.sh)
+          2.  Addded [scripts/bin/setup/mac/_gh.sh](scripts/bin/setup/mac/_gh.sh)
+          3.  Updated [scripts/bin/setup/_setup.sh](scripts/bin/setup/_setup.sh)  
+      2.  Added nativeScript support
+        * Reflected changes:
+          1.  Updated [scripts/bin/_types.sh](scripts/bin/_types.sh)
+          2.  Addded [scripts/bin/setup/mac/_nativescript.sh](scripts/bin/setup/mac/_nativescript.sh)
+          3.  Updated [scripts/bin/setup/_setup.sh](scripts/bin/setup/_setup.sh)  
+      3.  Added global env config script
+        * Reflected changes:
+          1.  Added [scripts/bin/_env.sh](scripts/bin/_env.sh)
+          2.  Updated [scripts/bin/fiddle-publish.sh](scripts/bin/fiddle-publish.sh)
+    2. add "build" function ~ [Issue 152](https://github.com/bradyhouse/house/issues/152)
+      * Added [scripts/fiddle-build.sh](scripts/fiddle-build.sh)
+        * Reflected changes:
+          1. Added [scripts/bin/angular2-seeder/_build.sh](scripts/bin/angular2-seeder/_build.sh)
+          2. Updated [scripts/bin/_types.sh](scripts/bin/_types.sh)
+          3. Added [scripts/bin/_env.sh](scripts/bin/_env.sh)
+          4. Updated [scripts/fiddle.sh](scripts/fiddle.sh)
+          5. Updated [scripts/fiddle-publish.sh](scripts/fiddle-publish.sh)
+
+* **Jquery**
+    1.  Added [fiddles/jquery/fiddle-0042-EniPuzzle](fiddles/jquery/fiddle-0042-EniPuzzle) ~ [Issue 146](https://github.com/bradyhouse/house/issues/146)
+
+* **Angular2 Seeder**
+    1.  Added [fiddles/angular2-seeder/fiddle-0001-EniPuzzle](fiddles/angular2-seeder/fiddle-0001-EniPuzzle) ~ [Issue 151](https://github.com/bradyhouse/house/issues/151)
+
+* **Three.js**
+    1.  Started [fiddles/three/fiddle-0023-EniPuzzle](fiddles/three/fiddle-0023-EniPuzzle) ~ [Issue 153](https://github.com/bradyhouse/house/issues/153)
+
+
+### 201704170420
+
+* **Node**
+
+  1.  Added [fiddles/node/fiddle-0022-Gulp](fiddles/node/fiddle-0022-Gulp) ~ [Issue 154](https://github.com/bradyhouse/house/issues/154)
+  2.  Added [fiddles/node/fiddle-0023-BrowserSync](fiddles/node/fiddle-0023-BrowserSync) ~ [Issue 155](https://github.com/bradyhouse/house/issues/155)
+  3.  Added [fiddles/node/fiddle-0024-Browserify](fiddles/node/fiddle-0024-Browserify) ~ [Issue 156](https://github.com/bradyhouse/house/issues/156)
+  4.  Started [fiddles/node/fiddle-0025-CouchDbCli](fiddles/node/fiddle-0025-CouchDbCli) ~ [Issue 161](https://github.com/bradyhouse/house/issues/161)
+  5.  Added [fiddles/node/fiddle-0026-Sqlite3](fiddles/node/fiddle-0026-Sqlite3)
+
+* **Angular2** 
+
+  1.  Added [fiddles/angular2/fiddle-0048-SlickGridTree](fiddles/angular2/fiddle-0048-SlickGridTree) ~ [Issue 159](https://github.com/bradyhouse/house/issues/159)
+  2.  Added [fiddles/angular2/fiddle-0049-TourOfHeroes](fiddles/angular2/fiddle-0049-TourOfHeroes) ~ [Issue 157](https://github.com/bradyhouse/house/issues/157)
+  3.  Added [fiddles/angular2/fiddle-0050-CssElementQueries](fiddles/angular2/fiddle-0050-CssElementQueries) ~ [Issue 165](https://github.com/bradyhouse/house/issues/165)
+
+* **Angular2 Seeder**
+
+  1.  Added [fiddles/angular2-seeder/fiddle-0002-TourOfHeroes](fiddles/angular2-seeder/fiddle-0002-TourOfHeroes) ~ [Issue 158](https://github.com/bradyhouse/house/issues/158)
+
+* **Angular2 CLI**
+
+  1.  Added [fiddles/angular2-cli/fiddle-0004-TourOfHeroes](fiddles/angular2-cli/fiddle-0004-TourOfHeroes) ~ [Issue 160](https://github.com/bradyhouse/house/issues/160)
+  2.  Added [fiddles/angular2-cli/fiddle-0005-SlickGridTree](fiddles/angular2-cli/fiddle-0005-SlickGridTree) ~ [Issue 166](https://github.com/bradyhouse/house/issues/166)
+  3.  Started [fiddles/angular2-cli/fiddle-0006-EniPuzzle](fiddles/angular2-cli/fiddle-0006-EniPuzzle) ~ [Issue 168](https://github.com/bradyhouse/house/issues/168)
+  4.  Added [fiddles/angular2-cli/fiddle-0007-StructuralDirective](fiddles/angular2-cli/fiddle-0007-StructuralDirective) ~ [Issue 169](https://github.com/bradyhouse/house/issues/169)

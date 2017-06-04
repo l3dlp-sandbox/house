@@ -37,4 +37,3 @@ function setStatusBarColors() {
     }
 }
 exports.setStatusBarColors = setStatusBarColors;
-//# sourceMappingURL=status-bar-util.js.map

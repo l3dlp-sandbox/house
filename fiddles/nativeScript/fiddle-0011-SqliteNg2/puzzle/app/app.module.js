@@ -22,8 +22,6 @@ AppModule = __decorate([
             app_component_1.AppComponent
         ].concat(app_routing_1.navigatableComponents),
         bootstrap: [app_component_1.AppComponent]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], AppModule);
 exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map

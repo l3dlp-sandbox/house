@@ -25,6 +25,7 @@ module.exports = {
   'webloc'  : 'application/xml',
   'docx'    : 'application/zip',
   'jpg'     : 'image/jpeg',
+  'jpeg'    : 'image/jpeg',
   'bmml'    : 'text/plain',
   'log'     : 'text/plain',
   'sh'      : 'text/plain',
@@ -32,5 +33,6 @@ module.exports = {
   'gif'     : 'image/gif',
   'xml'     : 'application/xml',
   'java'    : 'text/x-java-source',
-  'xcf'     : 'application/octet-stream'
+  'xcf'     : 'application/octet-stream',
+  'rtf'     : 'application/rtf'
 }

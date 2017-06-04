@@ -8,13 +8,16 @@ with deciding how your code base will go from typescript to transpiled javascrip
 Short of playing with the link:https://cli.angular.io/[Angular Cmd Line Interface (CLI)], which (as of the writing
 of this _markdown_) is not quite ready for _production_, there are _seeder project templates_.
 
-This collection is aimed at POC's experimenting with the link:https://github.com/mgechev/angular2-seed[angular2 seed]
+This collection is aimed at POC's experimenting with the link:https://github.com/NathanWalker/angular-seed-advanced[angular2 seed advanced]
 template.  The `fiddle.sh` script can be used to extend or test drive this collection. The following table outlines how.
 
 === fiddle.sh Angular2 Seeder Commands
 
 [cols="2,2,5a"]
 |===
+|Build
+|`./fiddle.sh "build" "angular2-seeder" "fiddle-0000-Template"`
+|link:build.md[sample output & additional details]
 |Create
 |`./fiddle.sh "create" "angular2-seeder" "fiddle-0000-Template"`
 |link:create.md[sample output & additional details]
@@ -24,6 +27,9 @@ template.  The `fiddle.sh` script can be used to extend or test drive this colle
 |Fork
 |`./fiddle.sh "fork" "angular2-seeder" "0000" "fiddle-0001-Fork"`
 |link:fork.md[sample output & additional details]
+|Index
+|`./fiddle.sh "index" "angular2-seeder"`
+|link:index.md[sample output & additional details]
 |List
 |`./fiddle.sh "list" "angular2-seeder"`
 |link:list.md[sample output & additional details]
@@ -36,6 +42,8 @@ template.  The `fiddle.sh` script can be used to extend or test drive this colle
 |===
 
 == Online Resources
+
+*   link:https://github.com/NathanWalker/angular-seed-advanced[angular-seed-advanced repo]
 
 === Reference
 

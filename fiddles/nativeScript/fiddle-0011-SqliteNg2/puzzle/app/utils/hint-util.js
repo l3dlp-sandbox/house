@@ -9,4 +9,3 @@ function setHintColor(args) {
     }
 }
 exports.setHintColor = setHintColor;
-//# sourceMappingURL=hint-util.js.map

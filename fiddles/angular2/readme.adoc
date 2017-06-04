@@ -41,6 +41,7 @@ following table outlines how.
 
 *   link:https://angular.io/docs/ts/latest/[Angular 2 Docs]
 **   link:https://angular.io/docs/ts/latest/guide/style-guide.html[Style Guide]
+**   link:https://angular.io/docs/ts/latest/tutorial/[Tour of Heroes]
 **   link:https://angular.io/docs/ts/latest/guide/cheatsheet.html[Cheat Sheet]
 *   link:https://github.com/angular/angular-cli[Angular 2 CLI]
 *   link:http://valor-software.com/ng2-bootstrap/[ng2-bootstrap]
@@ -76,3 +77,8 @@ following table outlines how.
 *   link:https://getmdl.io/[https://getmdl.io/]
 *   link:https://www.youtube.com/watch?v=rrT6v5sOwJg[https://www.youtube.com/watch?v=rrT6v5sOwJg]
 *   link:http://materializecss.com/[http://materializecss.com/]
+
+==== Other Stuff
+
+*   link:https://github.com/stickfigure/blog/wiki/Opinionated-Comparison-of-React%2C-Angular2%2C-and-Aurelia?utm_source=javascriptweekly&utm_medium=email[Opinionated Comparison of React, Angular2, and Aurelia]
+

@@ -1,7 +1,7 @@
 fiddle-0011-SqliteNg2
 ======
 
-![Screenshot](screenshot.png)
+![Screen Scrape](http://i.imgur.com/pIdMFPS.gif)
 
 
 ### Title
@@ -11,7 +11,7 @@ Sqlite Ng2
 
 ### Creation Date
 
-11-30-16
+12-15-16
 
 
 ### Location
@@ -26,16 +26,15 @@ Chicago, IL
 
 ### Description
 
-NativeScript fiddle template test.  This is a smoke test of the [fiddle.sh](../../scripts/fiddle.sh) script to verify that
-it supports create/delete/refactor/list functionality for "nativescript" based POC's aka fiddles. This is only a test.
+Re-write [fiddle #9](../fiddle-0011-SqliteDb) (from scratch) using typescript and Angular2. 
 
 
 ### Use Case
 
 1.  Using your terminal app of choice navigate to the `scripts` directory
-2.  Startup the POC `fiddle.sh start fiddle-0011-SqliteNg2`
+2.  Startup the POC `fiddle.sh start nativescript 0011`
 
 
 ### Tags
 
-{N}, nativescript
+{N}, nativescript, immutable, angular2, typescript, nativescript-sqlite, nativescript-vibrator

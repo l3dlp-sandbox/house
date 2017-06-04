@@ -18,6 +18,11 @@
 # 12/15/2016 - See CHANGELOG @ 201612120420
 # ---------------------------------------------------------------------------------------------------|
 
+function mapHomePath() {
+  cd ~;
+  _path=$(pwd;);
+  echo ${_path};
+}
 
 function split() {
   str=$1;
@@ -227,6 +232,15 @@ function isJavaClassPath() {
     else
         echo "true";
     fi
+}
+
+function isNvmInstalled() {
+  if [[ ! $(nvm version;) ]]
+  then
+    echo "false";
+  else
+    echo "true";
+  fi
 }
 
 function isInstalled() {
